@@ -1,0 +1,8 @@
+{
+    "name":"01c-assignment",
+    "private":true,
+    "workspaces":[
+        "frontend",
+        "backend"
+    ]
+}
