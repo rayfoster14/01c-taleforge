@@ -5,11 +5,12 @@ Welcome to TaleForge! An AI short story generator based on emotions. Create a fl
 Thank you for this opportunity. I had many ideas that I wanted to implement, however I tried to keep to the time scale set to give a more reasonable reprentation of what can be achieved.
 
 Things I missed:
-- Comments - Apologises, I kept some comments through out but I ran out of time for commenting my code accurately. I will provide a follow up with comments ONLY later this weekend, the git commit will show no code changes, just extra comments.
+- Comments - Apologises, I kept some comments through out but I ran out of time for commenting my code accurately. I will provide a follow up with comments ONLY later this weekend, the git commit will show no code changes, just extra comments. (now commited)
 - Add a basic authentication flow - My solution is not using particually secure technologies. I would want to implement a simple JWT model for my API requests, with some sanitisation/validation of the data coming in.
 (mock user login via email/password, no need for real auth provider)
 - Design - I know functionality is much more important than design on this, however a lick of paint wouldn't go amiss! With the retro styled emoticons, I was planning on a MSN Messenger themed AI story generator using the flow as messenger bubbles.
 - Explore React Flow more - it's my first time using this library and I was blown away with it's simplicity. I would have been be reading more documentation and implementing more features.
+- Refactoring - Adding and removing feautres on the fly there are some redudant variables.etc and opportunities for refactoring to make the code much more readable.
 
 ## Setup
 

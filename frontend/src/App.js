@@ -1,8 +1,11 @@
 import React from 'react';
 import FlowUI from './FlowUI';
-import "beercss";
+import "beercss"; //use beer css for quick cohesive styling
+
 
 class App extends React.Component {
+
+  //Create the react logn state in the App context
   constructor(props) {
     super(props);
     this.state = {
@@ -37,6 +40,7 @@ class App extends React.Component {
 
     const url = this.state.mode === 'register' ? '/api/register' : '/api/login';
 
+    //Either register or login.
     fetch(url, {
       method: 'POST',
       headers: {
@@ -68,15 +72,12 @@ class App extends React.Component {
         password: ''
       });
 }.bind(this))
-
-       
-      .catch(function (error) {
+.catch(function (error) {
         this.setState({ message: error.message });
       }.bind(this));
   }
 
   render() {
-    if (this.state.isAuthenticated) {
     if (this.state.isAuthenticated) {
   return (
     <main className="responsive">
@@ -90,9 +91,6 @@ class App extends React.Component {
     </main>
   );
 }
-
-    }
-
     return (
       <main className="responsive">
         <div className="padding absolute center middle">

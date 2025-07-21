@@ -1,8 +1,10 @@
+/**
+ * Create a sqlite3 database then export it:
+ */
+
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
-
 const DBSOURCE = path.join(__dirname, 'users.db');
-
 const db = new sqlite3.Database(DBSOURCE, (err) => {
   if (err) {
     console.error(err.message);
